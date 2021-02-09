@@ -1,14 +1,15 @@
-@extends('admin_panel.adminLayout') @section('content')
-<script src="{{asset('js/lib/jquery.js')}}"></script>
-<script src="{{asset('js/dist/jquery.validate.js')}}"></script>
-<style>label.error {
-  color: #a94442;
-  background-color: #f2dede;
-  border-color: #ebccd1;
-  padding:1px 20px 1px 20px;
-}</style>
-
-
+@extends('admin_panel.adminLayout') 
+@section('content')
+@push('css')
+<style>
+    label.error {
+        color: #a94442;
+        background-color: #f2dede;
+        border-color: #ebccd1;
+        padding: 1px 20px 1px 20px;
+    }
+</style>
+@endpush
 
 <div class="content-wrapper">
     <div class="row">
@@ -21,13 +22,13 @@
                         <div class="form-group row">
                             <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Name</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="Name" id="Name" placeholder="Enter Category Name">
+                                <input type="text" class="form-control" name="Name" id="Name" placeholder="Enter Category Name" />
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Category Type</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="Type" id="Type" placeholder="Enter Category Type">
+                                <input type="text" class="form-control" name="Type" id="Type" placeholder="Enter Category Type" />
                             </div>
                         </div>
                         <button type="submit" class="btn btn-success mr-2">Submit</button>
@@ -65,9 +66,6 @@
                                         Created At
                                     </th>
                                     <th>
-                                        Updated At
-                                    </th>
-                                    <th>
                                         Edit
                                     </th>
                                     <th>
@@ -88,9 +86,6 @@
                                         {{$cat->created_at}}
                                     </td>
                                     <td>
-                                        {{$cat->updated_at}}
-                                    </td>
-                                    <td>
                                         <a href="{{route('admin.categories.edit', ['id' => $cat->id])}}" class="btn btn-warning">Edit</a>
                                     </td>
                                     <td>
@@ -107,30 +102,24 @@
     </div>
 </div>
 
-
+@push('js')
+<script src="{{asset('js/lib/jquery.js')}}"></script>
+<script src="{{asset('js/dist/jquery.validate.js')}}"></script>
 <!--JQUERY Validation-->
 <script>
-	
-	$(document).ready(function() {
-		
-		$("#cat_form").validate({
-			rules: {
-				Name: "required",
-				Type: "required",
-				
-				
-				
-			},
-			messages: {
-				Name: "Category Name is Required",
-				Type: "Category Type is Required",
-                	
-			}
-		});
-
-		
-	});
-	</script>
-<!--/JQUERY Validation-->
+    $(document).ready(function () {
+        $("#cat_form").validate({
+            rules: {
+                Name: "required",
+                Type: "required",
+            },
+            messages: {
+                Name: "Category Name is Required",
+                Type: "Category Type is Required",
+            },
+        });
+    });
+</script>
+@endpush
 
 @endsection

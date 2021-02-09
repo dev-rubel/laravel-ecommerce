@@ -1,7 +1,5 @@
 @foreach($sale as $s)
-
 	<h1>Order ID: {{$s->id}}</h1>
-
 	@foreach($all as $c)
 		@if($c[0]==$s->id)
 		    @foreach($products as $p)
@@ -11,12 +9,8 @@
 					@break
 		    	@endif
 			@endforeach
-
-			Ordered Size: {{$c[3]}}
-			
-			Ordered Color: <div style="height:25px;width:25px;margin:5px;display:inline-block;background-color: {{$c[4]}}"></div>
-			
-			
+			Ordered Size: {{$c[3]}}			
+			Ordered Color: <div style="height:25px;width:25px;margin:5px;display:inline-block;background-color: {{$c[4]}}"></div>			
 			 <br/>
 		 @endif
 	@endforeach

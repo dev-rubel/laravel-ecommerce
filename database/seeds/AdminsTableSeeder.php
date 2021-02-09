@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class AdminsTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,21 +11,16 @@ class AdminsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('admins')->delete();
-        
-        \DB::table('admins')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('admins')->insert([
+            0 => [
                 'username' => 'admin',
-                'name' => 'Electro',
+                'name' => 'admin',
                 'password' => '12345',
                 'created_at' => '2018-08-28',
                 'updated_at' => '2018-08-28',
-            ),
-        ));
-        
-        
+            ],
+        ]);
     }
 }

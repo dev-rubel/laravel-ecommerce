@@ -1,65 +1,31 @@
 
-An E-commerce website made with Laravel framework. It was created for varsity course project.
+# Lara-Ecommerce 🛍️
 
-## Demo ##
-Click [here](https://laravel-ecommerce-eshop.herokuapp.com/) for Demo Site <br />
-```
-Demo Customer
-Email   : john@examle.com
-Password: 12345
-```
-![Recordit GIF](https://raw.githubusercontent.com/arifszn/laravel-project-eshop/master/resources/assets/screenshots/1.gif)
-<br /> 
-<br />
-<br />
-***
-Click [here](https://laravel-ecommerce-eshop.herokuapp.com/admin) for Admin Panel <br />
-```
-Admin
-Username: admin
-Password: 12345
-```
-![Recordit GIF](https://raw.githubusercontent.com/arifszn/laravel-project-eshop/master/resources/assets/screenshots/2.gif)
-<br />
+An E-commerce website made with Laravel framework (V-6).
 
+## Usage
 
-## Features ##
-- jQuery Validation
-- Delivery Management
-- Eloquent ORM for database
-- Cart Management based on Ajax
-- Image Resizing when upload product images
+1. Clone this repository
+2. `composer install`
+3. `cp .env.example .env`
+4. `Config DB info in .env`
+5. `php artisan key:generate`
+6. `php artisan migrate`
+7. `php artisan db:seed`
+8. `php artisan serve`
 
-## Screenshots ##
-![alt text](https://raw.githubusercontent.com/arifszn/laravel-project-eshop/master/resources/assets/screenshots/3.png)
-<br />
-<br />
+## Demo Customer
 
-***
+`/login`
+`Email    : john@examle.com`
+`Password : 12345`
 
-![alt text](https://raw.githubusercontent.com/arifszn/laravel-project-eshop/master/resources/assets/screenshots/4.png)
-<br />
-<br />
+## Admin Login
 
-***
+`/admin`
+`Username : admin`
+`Password : 12345`
 
-![alt text](https://raw.githubusercontent.com/arifszn/laravel-project-eshop/master/resources/assets/screenshots/5.png)
-<br />
-<br />
+## Credits
 
-***
-
-![alt text](https://raw.githubusercontent.com/arifszn/laravel-project-eshop/master/resources/assets/screenshots/6.png)
-<br />
-<br />
-
-***
-
-![alt text](https://raw.githubusercontent.com/arifszn/laravel-project-eshop/master/resources/assets/screenshots/7.png)
-<br />
-<br />
-
-***
-
-![alt text](https://raw.githubusercontent.com/arifszn/laravel-project-eshop/master/resources/assets/screenshots/8.png)
-
+- [devrubel](https://github.com/dev-rubel)

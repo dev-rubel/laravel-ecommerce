@@ -12,53 +12,42 @@ use App\User;
 use App\Product;
 use App\Category;
 
-
-class loginController extends Controller
+class LoginController extends Controller
 {
     public function adminIndex()
     {
-    	return view('admin_panel.adminLogin');
+        return view('admin_panel.adminLogin');
     }
+
     public function adminLogout()
     {
-        session()->flush();   
-    	return redirect()->route('admin.login');
+        session()->flush();
+        return redirect()->route('admin.login');
     }
+
     public function adminPosted(AdminLoginVerifyRequest $request)
-    {  
-        $admin = Admin::where('username',$request->Username)->first();
-        
-        if($admin==null)
-        {
-            
+    {
+        $admin = Admin::where('username', $request->Username)->first();
+
+        if ($admin == null) {
             $request->session()->flash('message', 'Invalid Username');
-            
+
             return redirect(route('admin.login'));
-        }
-        
-        else
-        {
-            if($request->Password==$admin->password)
-            {
-                session()->put('admin',$admin);
+        } else {
+            if (sha1($request->Password) == $admin->password) {
+                session()->put('admin', $admin);
                 //$request->session()->put('username', $request->Username);
                 return redirect()->route('admin.dashboard');
-            }
-            
-            else if($request->Password!=$admin->password)
-            {
+            } elseif ($request->Password != $admin->password) {
                 $request->session()->flash('message', 'Invalid Password');
                 return view('admin_panel.adminLogin');
             }
         }
-        
-        
-        
     }
-    
+
     public function userIndex()
     {
-        if(session()->has('user')){
+        if (session()->has('user')) {
             return redirect()->route("user.cart");
         }
 
@@ -66,29 +55,26 @@ class loginController extends Controller
         $cat = Category::all();
 
         return view('store.login')
-        ->with('products', $res)
-        ->with("cat", $cat);
-
+            ->with('products', $res)
+            ->with("cat", $cat);
     }
 
     public function userPosted(UserLoginVerifyRequest $request)
     {
-        $user = User::where('email',$request->email)
-        ->where('password',$request->pass)
-        ->first();
+        $user = User::where('email', $request->email)
+            ->where('password', sha1($request->pass))
+            ->first();
 
-        if($user==null)
-        {
+        if ($user == null) {
             $request->session()->flash('message', 'Invalid User');
-    		
+
             return redirect()->route('user.login');
-        }
-        else
-        {
+        } else {
             $request->session()->put('user', $user);
             return redirect()->route('user.home');
         }
     }
+
     public function userLogout(Request $r)
     {
         $r->session()->flush();

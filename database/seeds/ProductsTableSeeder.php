@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class ProductsTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,15 +11,12 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('products')->delete();
-        
-        \DB::table('products')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('products')->insert([
+            0 => [
                 'id' => 1,
-            'name' => 'Apple MacBook Pro (2018)',
+                'name' => 'Apple MacBook Pro (2018)',
                 'image_name' => '1.jpg',
                 'description' => '<div class="ng-scope">
 <p>Processor - Six Core Intel Core i7<br />Processor Clock Speed - 2.2-4.1GHz<br />Display Size - 15.4"<br />RAM - 16GB<br />RAM Type - DDR4 2400MHz (Onboard)<br />Storage - 256GB SSD</p>
@@ -32,9 +28,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 1,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            1 => 
-            array (
+            ],
+            1 => [
                 'id' => 3,
                 'name' => 'HP Probook X360 440 G1',
                 'image_name' => '1.jpg',
@@ -48,9 +43,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 1,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            2 => 
-            array (
+            ],
+            2 => [
                 'id' => 4,
                 'name' => 'Apple iPad Pro',
                 'image_name' => '1.jpg',
@@ -64,11 +58,10 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 7,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            3 => 
-            array (
+            ],
+            3 => [
                 'id' => 5,
-            'name' => 'Google Pixel 3 (64 GB)',
+                'name' => 'Google Pixel 3 (64 GB)',
                 'image_name' => '1.jpg',
                 'description' => '<div class="ng-scope">
 <ul class="i8Z77e">
@@ -87,9 +80,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 2,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            4 => 
-            array (
+            ],
+            4 => [
                 'id' => 6,
                 'name' => 'Samsung Galaxy Note 9',
                 'image_name' => '1.jpg',
@@ -112,9 +104,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 2,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-10',
-            ),
-            5 => 
-            array (
+            ],
+            5 => [
                 'id' => 8,
                 'name' => 'A4tech Bloody G437',
                 'image_name' => '1.jpg',
@@ -131,9 +122,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 3,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-12',
-            ),
-            6 => 
-            array (
+            ],
+            6 => [
                 'id' => 11,
                 'name' => 'Canon EOS 6D Mark II',
                 'image_name' => '1.jpg',
@@ -145,13 +135,13 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 4,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            7 => 
-            array (
+            ],
+            7 => [
                 'id' => 12,
                 'name' => 'Nikon D7200 Camera',
                 'image_name' => '1.jpg',
-                'description' => '<p>Model - Nikon D7200<br />Effective Pixels - 24.2 Megapixels<br />Lens Mount - AF-S 18-140mm<br />Processor - Expeed 4<br />Sensor Type - CMOS Sensor<br />Screen Type - TFT LCD<br />Screen Size - 3.2"</p>',
+                'description' =>
+                    '<p>Model - Nikon D7200<br />Effective Pixels - 24.2 Megapixels<br />Lens Mount - AF-S 18-140mm<br />Processor - Expeed 4<br />Sensor Type - CMOS Sensor<br />Screen Type - TFT LCD<br />Screen Size - 3.2"</p>',
                 'colors' => '#000000',
                 'price' => 78850,
                 'discount' => 75000,
@@ -159,13 +149,12 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 4,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            8 => 
-            array (
+            ],
+            8 => [
                 'id' => 15,
                 'name' => 'Canon PowerShot SX730',
                 'image_name' => '1.jpg',
-            'description' => '<p>Model - Canon PowerShot SX730 HS<br />Resolution (MP) - 20.3 Mega pixels<br />Display (Inch) - 3" TFT Color LCD Display<br />Optical Zoom (X) - 40x<br />Battery - NB-13L Battery</p>',
+                'description' => '<p>Model - Canon PowerShot SX730 HS<br />Resolution (MP) - 20.3 Mega pixels<br />Display (Inch) - 3" TFT Color LCD Display<br />Optical Zoom (X) - 40x<br />Battery - NB-13L Battery</p>',
                 'colors' => '#000000',
                 'price' => 31500,
                 'discount' => 30000,
@@ -173,9 +162,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 4,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            9 => 
-            array (
+            ],
+            9 => [
                 'id' => 16,
                 'name' => 'Microsoft Xbox One',
                 'image_name' => '1.jpg',
@@ -193,9 +181,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 6,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            10 => 
-            array (
+            ],
+            10 => [
                 'id' => 17,
                 'name' => 'Logitech Wireless F710',
                 'image_name' => '1.jpg',
@@ -207,9 +194,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 6,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            11 => 
-            array (
+            ],
+            11 => [
                 'id' => 18,
                 'name' => 'ADATA 20100 mAh',
                 'image_name' => '1.jpg',
@@ -227,9 +213,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 5,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            12 => 
-            array (
+            ],
+            12 => [
                 'id' => 19,
                 'name' => 'Joyroom ZHI 10000 mAh',
                 'image_name' => '1.jpg',
@@ -247,9 +232,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 5,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            13 => 
-            array (
+            ],
+            13 => [
                 'id' => 20,
                 'name' => 'Astrum 10000mAh',
                 'image_name' => '1.jpg',
@@ -266,9 +250,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 5,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            14 => 
-            array (
+            ],
+            14 => [
                 'id' => 21,
                 'name' => 'Mi 10000 mAh v2',
                 'image_name' => '1.jpg',
@@ -287,9 +270,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 5,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            15 => 
-            array (
+            ],
+            15 => [
                 'id' => 22,
                 'name' => 'Apple Watch Series 4',
                 'image_name' => '1.jpg',
@@ -301,9 +283,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 8,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-12',
-            ),
-            16 => 
-            array (
+            ],
+            16 => [
                 'id' => 23,
                 'name' => 'Mi Amazfit Bip',
                 'image_name' => '1.jpg',
@@ -317,9 +298,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 8,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            17 => 
-            array (
+            ],
+            17 => [
                 'id' => 24,
                 'name' => 'Garmin fenix 5 Sapphire',
                 'image_name' => '1.jpg',
@@ -338,9 +318,8 @@ class ProductsTableSeeder extends Seeder
                 'category_id' => 8,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-09',
-            ),
-            18 => 
-            array (
+            ],
+            18 => [
                 'id' => 25,
                 'name' => 'Beats PILL Plus',
                 'image_name' => '1.jpg',
@@ -356,9 +335,8 @@ Active 2-way crossove',
                 'category_id' => 9,
                 'created_at' => '2019-02-09',
                 'updated_at' => '2019-02-12',
-            ),
-            19 => 
-            array (
+            ],
+            19 => [
                 'id' => 26,
                 'name' => 'JBL Omni 50+',
                 'image_name' => '1.jpg',
@@ -370,13 +348,13 @@ Active 2-way crossove',
                 'category_id' => 9,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-12',
-            ),
-            20 => 
-            array (
+            ],
+            20 => [
                 'id' => 27,
                 'name' => 'Edifier S350DB 2.1',
                 'image_name' => '1.jpg',
-            'description' => '<p>Model - Edifier S350DB<br />Type - Modern Powered Bluetooth Bookshelf Speaker<br />Channel - 2.1<br />RMS/Channel (Watt) - 15Watt x 2 (Treble) + 25Watt x 2 (midrange and bass)<br />RMS/Subwoofer (Watt) - 70Watt</p>',
+                'description' =>
+                    '<p>Model - Edifier S350DB<br />Type - Modern Powered Bluetooth Bookshelf Speaker<br />Channel - 2.1<br />RMS/Channel (Watt) - 15Watt x 2 (Treble) + 25Watt x 2 (midrange and bass)<br />RMS/Subwoofer (Watt) - 70Watt</p>',
                 'colors' => '#000000',
                 'price' => 31500,
                 'discount' => 30000,
@@ -384,13 +362,13 @@ Active 2-way crossove',
                 'category_id' => 9,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            21 => 
-            array (
+            ],
+            21 => [
                 'id' => 28,
                 'name' => 'JBL Xtreme 2 Portable',
                 'image_name' => '1.jpg',
-            'description' => '<p>Model - JBL Xtreme 2<br />Type - Portable Bluetooth Speaker<br />Lithium-ion Polymer 36Wh (Equivalent to 3.7V 10000mAh)<br />Wirelessly connect<br />2 smartphones or tablets<br />charges device via an USB port</p>',
+                'description' =>
+                    '<p>Model - JBL Xtreme 2<br />Type - Portable Bluetooth Speaker<br />Lithium-ion Polymer 36Wh (Equivalent to 3.7V 10000mAh)<br />Wirelessly connect<br />2 smartphones or tablets<br />charges device via an USB port</p>',
                 'colors' => '#400080',
                 'price' => 25400,
                 'discount' => 24000,
@@ -398,9 +376,8 @@ Active 2-way crossove',
                 'category_id' => 9,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            22 => 
-            array (
+            ],
+            22 => [
                 'id' => 30,
                 'name' => 'APPLE Magic Mouse 2',
                 'image_name' => '1.jpg',
@@ -412,9 +389,8 @@ Active 2-way crossove',
                 'category_id' => 10,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            23 => 
-            array (
+            ],
+            23 => [
                 'id' => 31,
                 'name' => 'Rapoo 3600 Silent',
                 'image_name' => '1.jpg',
@@ -434,9 +410,8 @@ Active 2-way crossove',
                 'category_id' => 10,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            24 => 
-            array (
+            ],
+            24 => [
                 'id' => 34,
                 'name' => 'Corsair STRAFE Mechanical',
                 'image_name' => '1.jpg',
@@ -448,13 +423,12 @@ Active 2-way crossove',
                 'category_id' => 10,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            25 => 
-            array (
+            ],
+            25 => [
                 'id' => 35,
                 'name' => 'APPLE MAGIC KEYBOARD',
                 'image_name' => '1.jpg',
-            'description' => 'APPLE MAGIC KEYBOARD (MLA22ZA/A, MLA22LL/A)',
+                'description' => 'APPLE MAGIC KEYBOARD (MLA22ZA/A, MLA22LL/A)',
                 'colors' => '#c0c0c0',
                 'price' => 9700,
                 'discount' => 9500,
@@ -462,13 +436,13 @@ Active 2-way crossove',
                 'category_id' => 10,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            26 => 
-            array (
+            ],
+            26 => [
                 'id' => 36,
                 'name' => 'MSI GT75VR 7RE TITAN',
                 'image_name' => '1.jpg',
-                'description' => '<p>Generation - 7th Gen<br />Processor - Intel Core i7 7820HK<br />Processor Clock Speed - 2.90-3.90GHz<br />Display Size - 17.3"<br />RAM - 32GB<br />RAM Type - DDR4 2400MHz<br />Storage - 1TB HDD + 256GB NVMe SSD</p>',
+                'description' =>
+                    '<p>Generation - 7th Gen<br />Processor - Intel Core i7 7820HK<br />Processor Clock Speed - 2.90-3.90GHz<br />Display Size - 17.3"<br />RAM - 32GB<br />RAM Type - DDR4 2400MHz<br />Storage - 1TB HDD + 256GB NVMe SSD</p>',
                 'colors' => '#808080',
                 'price' => 254630,
                 'discount' => 245000,
@@ -476,13 +450,13 @@ Active 2-way crossove',
                 'category_id' => 1,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            27 => 
-            array (
+            ],
+            27 => [
                 'id' => 37,
-            'name' => 'Asus ROG G752VS(KBL)',
+                'name' => 'Asus ROG G752VS(KBL)',
                 'image_name' => '1.jpg',
-                'description' => '<p>Generation - 7th Gen<br />Processor - Intel Core i7 7700HQ<br />Processor Clock Speed - 2.80GHz<br />Display Size - 17.3"<br />RAM - 32GB<br />RAM Type - DDR4<br />HDD - 2TBHDD+512GB SSD<br />Operating System - Endless</p>',
+                'description' =>
+                    '<p>Generation - 7th Gen<br />Processor - Intel Core i7 7700HQ<br />Processor Clock Speed - 2.80GHz<br />Display Size - 17.3"<br />RAM - 32GB<br />RAM Type - DDR4<br />HDD - 2TBHDD+512GB SSD<br />Operating System - Endless</p>',
                 'colors' => '#808080',
                 'price' => 231420,
                 'discount' => 224000,
@@ -490,13 +464,13 @@ Active 2-way crossove',
                 'category_id' => 1,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            28 => 
-            array (
+            ],
+            28 => [
                 'id' => 38,
                 'name' => 'Microsoft Surface Pro',
                 'image_name' => '1.jpg',
-                'description' => '<p>Generation - 8th Gen<br />Processor - Intel Core i7 8650U<br />Processor Clock Speed - 1.90-4.20GHz<br />Display Size - 12.3"<br />RAM - 16GB<br />Storage - 512GB SSD<br />Operating System - Windows 10 Home</p>',
+                'description' =>
+                    '<p>Generation - 8th Gen<br />Processor - Intel Core i7 8650U<br />Processor Clock Speed - 1.90-4.20GHz<br />Display Size - 12.3"<br />RAM - 16GB<br />Storage - 512GB SSD<br />Operating System - Windows 10 Home</p>',
                 'colors' => '#c0c0c0,#8080ff',
                 'price' => 202650,
                 'discount' => 195000,
@@ -504,13 +478,13 @@ Active 2-way crossove',
                 'category_id' => 7,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            29 => 
-            array (
+            ],
+            29 => [
                 'id' => 39,
                 'name' => 'HP Spectre 13-V113TU',
                 'image_name' => '1.jpg',
-                'description' => '<p>Model - HP Spectre 13-V113TU<br />Processor - Intel Core i5 7200U<br />Generation - 7th Gen<br />Processor Clock Speed - 2.50-3.10GHz<br />Display Size - 13.3"<br />RAM - 8GB<br />RAM Type - LPDDR3 1866 On-Board</p>',
+                'description' =>
+                    '<p>Model - HP Spectre 13-V113TU<br />Processor - Intel Core i5 7200U<br />Generation - 7th Gen<br />Processor Clock Speed - 2.50-3.10GHz<br />Display Size - 13.3"<br />RAM - 8GB<br />RAM Type - LPDDR3 1866 On-Board</p>',
                 'colors' => '#000000',
                 'price' => 126300,
                 'discount' => 123000,
@@ -518,9 +492,8 @@ Active 2-way crossove',
                 'category_id' => 1,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            30 => 
-            array (
+            ],
+            30 => [
                 'id' => 40,
                 'name' => 'Asus GL503VM Core i7',
                 'image_name' => '1.jpg',
@@ -532,9 +505,8 @@ Active 2-way crossove',
                 'category_id' => 1,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            31 => 
-            array (
+            ],
+            31 => [
                 'id' => 41,
                 'name' => 'asus zenfone 5z',
                 'image_name' => '1.jpg',
@@ -553,9 +525,8 @@ Active 2-way crossove',
                 'category_id' => 2,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            32 => 
-            array (
+            ],
+            32 => [
                 'id' => 42,
                 'name' => 'Skullcandy Over-Ear',
                 'image_name' => '1.jpg',
@@ -574,9 +545,8 @@ Active 2-way crossove',
                 'category_id' => 3,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            33 => 
-            array (
+            ],
+            33 => [
                 'id' => 43,
                 'name' => 'Microlab Outlander',
                 'image_name' => '1.jpg',
@@ -597,9 +567,8 @@ Active 2-way crossove',
                 'category_id' => 3,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            34 => 
-            array (
+            ],
+            34 => [
                 'id' => 44,
                 'name' => 'DualShock 4 Wireless',
                 'image_name' => '1.jpg',
@@ -615,13 +584,13 @@ Brand Sony',
                 'category_id' => 6,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-            35 => 
-            array (
+            ],
+            35 => [
                 'id' => 45,
                 'name' => 'Huawei MediaPad T3',
                 'image_name' => '1.jpg',
-                'description' => '<p>Model - Huawei MediaPad T3 10<br />Processor Type - Qualcomm MSM8917 Quad Core A53<br />RAM - 2GB<br />Processor Speed - 1.4GHz<br />Internal Memory - 16GB ROM<br />Display Type - IPS display<br />Display Size - 9.6"<br />Screen Resolution - 1280 x 800</p>',
+                'description' =>
+                    '<p>Model - Huawei MediaPad T3 10<br />Processor Type - Qualcomm MSM8917 Quad Core A53<br />RAM - 2GB<br />Processor Speed - 1.4GHz<br />Internal Memory - 16GB ROM<br />Display Type - IPS display<br />Display Size - 9.6"<br />Screen Resolution - 1280 x 800</p>',
                 'colors' => '#000000',
                 'price' => 19900,
                 'discount' => 18900,
@@ -629,9 +598,7 @@ Brand Sony',
                 'category_id' => 7,
                 'created_at' => '2019-02-10',
                 'updated_at' => '2019-02-10',
-            ),
-        ));
-        
-        
+            ],
+        ]);
     }
 }

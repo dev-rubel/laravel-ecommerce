@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\sale;
 
-class dashboardController extends Controller
+class DashboardController extends Controller
 {
-    public function index(){
-        $sales =  sale::all();
-        return view('admin_panel.dashboard.index')
-        ->with('sales',$sales);
+    public function index()
+    {
+        $sales = sale::all();
+        return view('admin_panel.dashboard.index')->with('sales', $sales);
     }
 }

@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class SalesTableSeeder extends Seeder
 {
-
     /**
      * Auto generated seed file
      *
@@ -12,13 +11,10 @@ class SalesTableSeeder extends Seeder
      */
     public function run()
     {
-        
-
         \DB::table('sales')->delete();
-        
-        \DB::table('sales')->insert(array (
-            0 => 
-            array (
+
+        \DB::table('sales')->insert([
+            0 => [
                 'id' => 1,
                 'user_id' => 1,
                 'product_id' => '3:1:#000000:1',
@@ -26,9 +22,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 91000,
                 'created_at' => '2019-02-02 07:32:33',
                 'updated_at' => '2019-02-11',
-            ),
-            1 => 
-            array (
+            ],
+            1 => [
                 'id' => 2,
                 'user_id' => 2,
                 'product_id' => '5:1:#c0c0c0:1,30:2:#000000:2',
@@ -36,9 +31,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 93000,
                 'created_at' => '2019-02-11 14:12:27',
                 'updated_at' => '2019-02-11',
-            ),
-            2 => 
-            array (
+            ],
+            2 => [
                 'id' => 3,
                 'user_id' => 2,
                 'product_id' => '22:1:#000000:1',
@@ -46,9 +40,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 43999,
                 'created_at' => '2019-02-07 16:29:16',
                 'updated_at' => '2019-02-11',
-            ),
-            3 => 
-            array (
+            ],
+            3 => [
                 'id' => 4,
                 'user_id' => 3,
                 'product_id' => '18:2:#000000:1,38:1:#8080ff:2,30:1:#000000:3',
@@ -56,9 +49,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 209998,
                 'created_at' => '2019-02-06 12:05:30',
                 'updated_at' => '2019-02-11',
-            ),
-            4 => 
-            array (
+            ],
+            4 => [
                 'id' => 5,
                 'user_id' => 4,
                 'product_id' => '12:1:#000000:2,17:1:#c0c0c0:3',
@@ -66,9 +58,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 79500,
                 'created_at' => '2019-02-11 16:56:54',
                 'updated_at' => '2019-02-11',
-            ),
-            5 => 
-            array (
+            ],
+            5 => [
                 'id' => 6,
                 'user_id' => 4,
                 'product_id' => '5:1:#c0c0c0:1',
@@ -76,9 +67,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 71000,
                 'created_at' => '2019-02-11 17:07:40',
                 'updated_at' => '2019-02-11',
-            ),
-            6 => 
-            array (
+            ],
+            6 => [
                 'id' => 7,
                 'user_id' => 4,
                 'product_id' => '1:1:#c0c0c0:1',
@@ -86,9 +76,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 205000,
                 'created_at' => '2019-02-05 12:24:53',
                 'updated_at' => '2019-02-11',
-            ),
-            7 => 
-            array (
+            ],
+            7 => [
                 'id' => 8,
                 'user_id' => 2,
                 'product_id' => '20:1:#000000:1,25:1:#000000:2',
@@ -96,9 +85,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 21500,
                 'created_at' => '2019-02-13 09:51:07',
                 'updated_at' => '2019-02-11',
-            ),
-            8 => 
-            array (
+            ],
+            8 => [
                 'id' => 9,
                 'user_id' => 2,
                 'product_id' => '27:1:#000000:1',
@@ -106,9 +94,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 30000,
                 'created_at' => '2019-02-10 07:33:46',
                 'updated_at' => '2019-02-11',
-            ),
-            9 => 
-            array (
+            ],
+            9 => [
                 'id' => 10,
                 'user_id' => 2,
                 'product_id' => '44:1:#ff0000:1',
@@ -116,9 +103,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 3500,
                 'created_at' => '2019-02-11 17:09:12',
                 'updated_at' => '2019-02-11',
-            ),
-            10 => 
-            array (
+            ],
+            10 => [
                 'id' => 11,
                 'user_id' => 2,
                 'product_id' => '28:1:#400080:1',
@@ -126,9 +112,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 24000,
                 'created_at' => '2019-02-11 17:09:49',
                 'updated_at' => '2019-02-11',
-            ),
-            11 => 
-            array (
+            ],
+            11 => [
                 'id' => 12,
                 'user_id' => 2,
                 'product_id' => '34:1:#ff0000:1',
@@ -136,9 +121,8 @@ class SalesTableSeeder extends Seeder
                 'price' => 10500,
                 'created_at' => '2019-02-05 04:55:26',
                 'updated_at' => '2019-02-11',
-            ),
-            12 => 
-            array (
+            ],
+            12 => [
                 'id' => 13,
                 'user_id' => 1,
                 'product_id' => '4:1:#c0c0c0:1',
@@ -146,9 +130,7 @@ class SalesTableSeeder extends Seeder
                 'price' => 111000,
                 'created_at' => '2019-02-14 20:54:08',
                 'updated_at' => '2019-02-14',
-            ),
-        ));
-        
-        
+            ],
+        ]);
     }
 }

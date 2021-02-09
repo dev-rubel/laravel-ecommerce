@@ -1,11 +1,9 @@
-@extends('store.storeLayout')
-@section('content')
+@extends('store.storeLayout') @section('content')
 <div class="section">
     <!-- container -->
     <div class="container">
         <!-- row -->
         <div class="row">
-
             <!-- STORE -->
             <div id="store" class="col-md-12">
                 <!-- store products -->
@@ -15,7 +13,7 @@
                     <div class="col-md-4 col-xs-6">
                         <div class="product">
                             <div class="product-img">
-                                <img src="uploads/products/{{$product->id}}/{{$product->image_name}}" alt="">
+                                <img src="uploads/products/{{$product->id}}/{{$product->image_name}}" alt="" />
                                 <div class="product-label">
                                     <span class="sale">offer</span>
                                     <span class="new">{{$product->tag}}</span>
@@ -31,10 +29,9 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                 </div>
-                                
                             </div>
                             <div class="add-to-cart">
-                                <a class="add-to-cart-btn" href="{{route('user.view',['id'=>$product->id])}}"><i class="fa fa-shopping-cart"></i>Purchase</a>
+                                <a class="add-to-cart-btn" href="{{route('user.view',['id'=>$product->id])}}">Purchase</a>
                             </div>
                         </div>
                     </div>
@@ -49,3 +46,4 @@
     </div>
 
     @endsection
+</div>

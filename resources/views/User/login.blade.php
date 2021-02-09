@@ -18,7 +18,5 @@
 				<input type="submit" value="Login">
 			</td>
 		</tr>
-	</table>
-
-	
+	</table>	
 </form>
